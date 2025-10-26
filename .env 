@@ -1,0 +1,9 @@
+PORT=3000
+SMTP_HOST=smtp.yourprovider.com
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=your-smtp-username
+SMTP_PASS=your-smtp-password
+INQUIRY_RECIPIENT=kamaan523@gmail.com
+# If your frontend is served from a different origin, list it here (comma-separated).
+# CORS_ORIGIN=http://localhost:5501
