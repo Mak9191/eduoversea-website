@@ -93,36 +93,68 @@ html {
     .service-card {
       transition: all 0.3s ease;
       background: white;
-      border-radius: 16px;
-      padding: 32px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-      border: 1px solid rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 4px 6px rgba(15, 23, 42, 0.06);
+      border: 1px solid rgba(15, 23, 42, 0.05);
     }
     
     .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      transform: translateY(-6px);
+      box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
       border-color: #3B82F6;
     }
-    
-    /* University Card Styles */
-    .uni-card {
-      transition: all 0.3s ease;
+
+    .country-card {
+      position: relative;
+      border-radius: 22px;
       overflow: hidden;
-      cursor: pointer;
+      min-height: 260px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 12px 24px rgba(15, 23, 42, 0.18);
+      color: #F8FAFC;
     }
-    
+
+    .country-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(15, 23, 42, 0.82) 0%, rgba(15, 23, 42, 0.55) 55%, rgba(15, 23, 42, 0.78) 100%);
+      z-index: 0;
+    }
+
+    .country-card > * {
+      position: relative;
+      z-index: 1;
+    }
+
+.country-card p {
+  color: #E2E8F0;
+}
+
+.country-card .country-meta {
+  color: #CBD5F5;
+}
+
+    /* University list cards */
+    .uni-card {
+      transition: all 0.25s ease;
+      border-radius: 18px;
+      border: 1px solid rgba(15, 23, 42, 0.1);
+      padding: 24px;
+      background: white;
+      box-shadow: 0 6px 14px rgba(15, 23, 42, 0.06);
+    }
+
     .uni-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    }
-    
-    .uni-card img {
-      transition: transform 0.3s ease;
-    }
-    
-    .uni-card:hover img {
-      transform: scale(1.1);
+      transform: translateY(-4px);
+      border-color: #2563EB;
+      box-shadow: 0 12px 24px rgba(37, 99, 235, 0.15);
     }
     
     /* Testimonial Styles */

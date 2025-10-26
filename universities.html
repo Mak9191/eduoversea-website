@@ -42,232 +42,220 @@
   
 
   <!-- Navbar -->
-  <nav class="bg-white shadow-md sticky top-0 z-50">
+  <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200/60 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between h-16 items-center">
-        <a class="text-2xl font-bold text-blue-700 hover:text-blue-800 transition flex items-center" href="index.html">
-          <span class="text-3xl mr-2">🌍</span>
-          EduOverseaz
+      <div class="flex items-center justify-between h-16 gap-4">
+        <a class="flex items-center gap-2 font-bold text-blue-700 hover:text-blue-800 transition" href="index.html">
+          <span class="text-3xl leading-none">🌍</span>
+          <span class="text-lg sm:text-xl">EduOverseaz</span>
         </a>
 
-        <div class="hidden md:flex items-center space-x-8">
-            
-          <a class="text-gray-700 hover:text-blue-700 font-medium" href="about.html">About Us</a>
-          <a class="text-gray-700 hover:text-blue-700 font-medium" href="services.html">Services</a>
-          <a class="text-gray-700 hover:text-blue-700 font-medium" href="universities.html">Universities</a>
-          <a class="text-gray-700 hover:text-blue-700 font-medium" href="success-stories.html">Success Stories</a>
-          <a class="text-gray-700 hover:text-blue-700 font-medium" href="process.html">Process</a>
-          <a class="text-gray-700 hover:text-blue-700 font-medium" href="faqs.html">FAQs</a>
-          <a class="text-gray-700 hover:text-blue-700 font-medium" href="contact.html">Contact</a>
-          <a class="btn-primary text-white px-6 py-2.5 rounded-full font-medium badge-pulse" href="book.html">Book Consultation</a>
+        <div class="hidden lg:flex flex-1 justify-center">
+          <div class="flex items-center gap-6 text-sm font-medium text-slate-600">
+            <a class="hover:text-blue-700" href="index.html">Home</a>
+            <a class="hover:text-blue-700" href="about.html">About Us</a>
+            <a class="hover:text-blue-700" href="services.html">Services</a>
+            <a class="hover:text-blue-700" href="universities.html">Universities</a>
+            <a class="hover:text-blue-700" href="success-stories.html">Success Stories</a>
+            <a class="hover:text-blue-700" href="process.html">Process</a>
+            <a class="hover:text-blue-700" href="faqs.html">FAQs</a>
+            <a class="hover:text-blue-700" href="contact.html">Contact</a>
+          </div>
         </div>
 
-        <div class="md:hidden">
-          <button class="p-2 rounded-md hover:bg-gray-100 transition" id="mobile-menu-button">
-            <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-            </svg>
-          </button>
+        <div class="hidden lg:flex items-center gap-4">
+          <span class="hidden xl:inline-flex items-center gap-2 text-sm text-slate-600 bg-slate-100 border border-slate-200 px-3 py-1 rounded-full">
+            <span class="text-lg leading-none text-yellow-500">⭐</span>
+            <span>4.8/5 · 5000+ students</span>
+          </span>
+          <a class="btn-primary text-white px-5 py-2.5 rounded-full font-semibold" href="book.html">Book Free Consultation</a>
         </div>
+
+        <button class="lg:hidden inline-flex items-center justify-center p-2 rounded-md border border-slate-200 text-slate-700 hover:bg-slate-100 transition" id="mobile-menu-button" aria-label="Toggle navigation">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+          </svg>
+        </button>
       </div>
     </div>
 
     <!-- Mobile Menu -->
-    <div class="hidden md:hidden px-4 pb-4 space-y-3 bg-white border-t" id="mobile-menu">
-      <a class="block py-2 text-gray-700 hover:text-blue-700 font-medium" href="index.html">Home</a>
-      <a class="block py-2 text-gray-700 hover:text-blue-700 font-medium" href="about.html">About Us</a>
-      <a class="block py-2 text-gray-700 hover:text-blue-700 font-medium" href="services.html">Services</a>
-      <a class="block py-2 text-gray-700 hover:text-blue-700 font-medium" href="universities.html">Universities</a>
-      <a class="block py-2 text-gray-700 hover:text-blue-700 font-medium" href="success-stories.html">Success Stories</a>
-      <a class="block py-2 text-gray-700 hover:text-blue-700 font-medium" href="process.html">Process</a>
-      <a class="block py-2 text-gray-700 hover:text-blue-700 font-medium" href="faqs.html">FAQs</a>
-      <a class="block py-2 text-gray-700 hover:text-blue-700 font-medium" href="contact.html">Contact</a>
-      <a class="block btn-primary text-white px-6 py-3 rounded-full text-center font-medium" href="book.html">Book Consultation</a>
+    <div class="hidden lg:hidden border-t border-slate-200 bg-white" id="mobile-menu">
+      <div class="px-4 py-4 space-y-2">
+        <div class="flex items-center gap-2 text-sm text-slate-600 bg-slate-100 border border-slate-200 px-3 py-1 rounded-full w-max">
+          <span class="text-base leading-none text-yellow-500">⭐</span>
+          <span>4.8/5 · 5000+ students</span>
+        </div>
+        <a class="block py-2 text-slate-700 hover:text-blue-700 font-medium" href="index.html">Home</a>
+        <a class="block py-2 text-slate-700 hover:text-blue-700 font-medium" href="about.html">About Us</a>
+        <a class="block py-2 text-slate-700 hover:text-blue-700 font-medium" href="services.html">Services</a>
+        <a class="block py-2 text-slate-700 hover:text-blue-700 font-medium" href="universities.html">Universities</a>
+        <a class="block py-2 text-slate-700 hover:text-blue-700 font-medium" href="success-stories.html">Success Stories</a>
+        <a class="block py-2 text-slate-700 hover:text-blue-700 font-medium" href="process.html">Process</a>
+        <a class="block py-2 text-slate-700 hover:text-blue-700 font-medium" href="faqs.html">FAQs</a>
+        <a class="block py-2 text-slate-700 hover:text-blue-700 font-medium" href="contact.html">Contact</a>
+        <a class="block text-center btn-primary text-white px-6 py-3 rounded-full font-semibold" href="book.html">Book Free Consultation</a>
+      </div>
     </div>
   </nav>
 
   <div class="min-h-screen">
-<section class="py-20 bg-white">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-12">
-<h2 class="text-4xl md:text-5xl font-bold mb-4 font-display" data-aos="fade-up">Popular Study Destinations</h2>
-<p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-          Explore opportunities in world's best education hubs
-        </p>
-</div>
-<div class="grid md:grid-cols-3 lg:grid-cols-3 gap-8">
-<div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
-<div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition">
-<div class="h-64 bg-gradient-to-br from-red-400 to-red-600"></div>
-<div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition"></div>
-<div class="absolute inset-0 p-8 flex flex-col justify-end text-white">
-<h3 class="text-3xl font-bold mb-2">🇨🇦 Canada</h3>
-<p class="mb-4">World-class education in a multicultural society with outstanding post-study work options and permanent residency pathways.</p>
-<div class="flex justify-between items-center">
-<span class="text-sm">15+ Universities</span>
-<a href="#Universities_Showcase">
-<span class="text-2xl group-hover:translate-x-2 transition cursor-pointer">→</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-<div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="200">
-<div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition">
-<div class="h-64 bg-gradient-to-br from-green-400 to-green-600"></div>
-<div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition"></div>
-<div class="absolute inset-0 p-8 flex flex-col justify-end text-white">
-<h3 class="text-3xl font-bold mb-2">🇦🇺 Australia</h3>
-<p class="mb-4">Cutting-edge research facilities, student-friendly policies, and a vibrant lifestyle in one of the world's most liveable nations.</p>
-<div class="flex justify-between items-center">
-<span class="text-sm">18+ Universities</span>
-<a href="#Universities_Showcase">
-<span class="text-2xl group-hover:translate-x-2 transition cursor-pointer">→</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-<div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="300">
-<div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition">
-<div class="h-64 bg-gradient-to-br from-blue-400 to-blue-600"></div>
-<div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition"></div>
-<div class="absolute inset-0 p-8 flex flex-col justify-end text-white">
-<h3 class="text-3xl font-bold mb-2">🇬🇧 United Kingdom</h3>
-<p class="mb-4">Prestigious universities with rich academic heritage, globally recognized degrees, and shorter master's programs.</p>
-<div class="flex justify-between items-center">
-<span class="text-sm">20+ Universities</span>
-<a href="#Universities_Showcase">
-<span class="text-2xl group-hover:translate-x-2 transition cursor-pointer">→</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-<div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="400">
-<div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition">
-<div class="h-64 bg-gradient-to-br from-purple-400 to-purple-600"></div>
-<div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition"></div>
-<div class="absolute inset-0 p-8 flex flex-col justify-end text-white">
-<h3 class="text-3xl font-bold mb-2">🇺🇸 United States</h3>
-<p class="mb-4">Flexible academic paths, innovation-driven programs, extensive research opportunities, and diverse campus life.</p>
-<div class="flex justify-between items-center">
-<span class="text-sm">25+ Universities</span>
-<a href="#Universities_Showcase">
-<span class="text-2xl group-hover:translate-x-2 transition cursor-pointer">→</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-<div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="500">
-<div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition">
-<div class="h-64 bg-gradient-to-br from-amber-400 to-amber-600"></div>
-<div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition"></div>
-<div class="absolute inset-0 p-8 flex flex-col justify-end text-white">
-<h3 class="text-3xl font-bold mb-2">🇪🇺 Europe</h3>
-<p class="mb-4">Affordable, high-quality education with multilingual environments, rich culture, and the chance to explore multiple countries.</p>
-<div class="flex justify-between items-center">
-<span class="text-sm">30+ Universities</span>
-<a href="#Universities_Showcase">
-<span class="text-2xl group-hover:translate-x-2 transition cursor-pointer">→</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-<div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="600">
-<div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition">
-<div class="h-64 bg-gradient-to-br from-teal-400 to-teal-600"></div>
-<div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition"></div>
-<div class="absolute inset-0 p-8 flex flex-col justify-end text-white">
-<h3 class="text-3xl font-bold mb-2">🇦🇪 / 🇸🇬 Dubai &amp; Singapore</h3>
-<p class="mb-4">Begin in these dynamic education hubs, benefit from industry connections, and transition smoothly to global universities.</p>
-<div class="flex justify-between items-center">
-<span class="text-sm">Gateway Pathways</span>
-<a href="#Universities_Showcase">
-<span class="text-2xl group-hover:translate-x-2 transition cursor-pointer">→</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section><section class="py-20 bg-white" id="Universities_Showcase">
-<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-12">
-<h2 class="text-4xl md:text-5xl font-bold mb-4 font-display">Top Universities</h2>
-<p class="text-xl text-gray-600 max-w-2xl mx-auto">Explore our partnerships with top universities across the globe.</p>
-</div>
-<!-- Filter Buttons -->
-<div class="flex flex-wrap justify-center gap-4 mb-10">
-<button class="filter-btn transition-colors duration-200 px-6 py-3 border border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white" data-filter="All">All Countries</button>
-<button class="filter-btn transition-colors duration-200 px-6 py-3 border border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white" data-filter="Canada">🇨🇦 Canada</button>
-<button class="filter-btn transition-colors duration-200 px-6 py-3 border border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white" data-filter="UK">🇬🇧 UK</button>
-<button class="filter-btn transition-colors duration-200 px-6 py-3 border border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white" data-filter="USA">🇺🇸 USA</button>
-<button class="filter-btn transition-colors duration-200 px-6 py-3 border border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white" data-filter="Australia">🇦🇺 Australia</button>
-<button class="filter-btn transition-colors duration-200 px-6 py-3 border border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white" data-filter="Dubai">🇦🇪 Dubai</button>
-<button class="filter-btn transition-colors duration-200 px-6 py-3 border border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white" data-filter="Singapore">🇸🇬 Singapore</button>
-</div>
-<!-- University Cards -->
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="universityCards">
-<div class="uni-card p-6 border rounded-xl shadow bg-white" data-country="Canada">
-<h3 class="text-xl font-bold mb-2">University of Toronto</h3>
-<p class="text-gray-600">Canada</p>
-</div>
-<div class="uni-card p-6 border rounded-xl shadow bg-white" data-country="UK">
-<h3 class="text-xl font-bold mb-2">Oxford University</h3>
-<p class="text-gray-600">United Kingdom</p>
-</div>
-<div class="uni-card p-6 border rounded-xl shadow bg-white" data-country="USA">
-<h3 class="text-xl font-bold mb-2">Harvard University</h3>
-<p class="text-gray-600">USA</p>
-</div>
-<div class="uni-card p-6 border rounded-xl shadow bg-white" data-country="Australia">
-<h3 class="text-xl font-bold mb-2">University of Melbourne</h3>
-<p class="text-gray-600">Australia</p>
-</div>
-<div class="uni-card p-6 border rounded-xl shadow bg-white" data-country="Singapore">
-<h3 class="text-xl font-bold mb-2">NUS Singapore</h3>
-<p class="text-gray-600">Singapore</p>
-</div>
-<div class="uni-card p-6 border rounded-xl shadow bg-white" data-country="Dubai">
-<h3 class="text-xl font-bold mb-2">Heriot-Watt University Dubai</h3>
-<p class="text-gray-600">Dubai</p>
-</div>
-<div class="uni-card p-6 border rounded-xl shadow bg-white" data-country="Canada">
-<h3 class="text-xl font-bold mb-2">University of Waterloo</h3>
-<p class="text-gray-600">Canada</p>
-</div>
-<div class="uni-card p-6 border rounded-xl shadow bg-white" data-country="All">
-<h3 class="text-xl font-bold mb-2">+ View All </h3>
-<p class="text-gray-600">Reach out to us for full list</p>
-</div>
-</div>
-</div>
-</section><script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll(".filter-btn");
-    const cards = document.querySelectorAll(".uni-card");
+    <section class="py-20 bg-white" id="Universities_Showcase">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <span class="text-sm uppercase tracking-widest text-blue-600 font-semibold">Global Destinations</span>
+          <h1 class="text-4xl md:text-5xl font-display font-bold mt-4 mb-4">Partner Universities Around the World</h1>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Each of our 200+ partnerships is carefully vetted so you can focus on finding the right academic fit, post-study outcomes, and lifestyle experience.</p>
+        </div>
 
-    buttons.forEach(btn => {
-      btn.addEventListener("click", () => {
-        const filter = btn.getAttribute("data-filter");
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <article class="country-card" style="background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80');" data-aos="fade-up" data-aos-delay="50">
+            <div>
+              <div class="flex items-center gap-3 mb-3">
+                <span class="text-3xl">🇨🇦</span>
+                <h2 class="text-xl font-semibold">Canada</h2>
+              </div>
+              <p>High-quality education, vibrant multicultural cities, and direct pathways to permanent residency.</p>
+            </div>
+            <div class="flex items-center justify-between text-sm country-meta mt-6">
+              <span>15+ Universities</span>
+              <span class="text-lg">→</span>
+            </div>
+          </article>
 
-        buttons.forEach(b => b.classList.remove("bg-blue-600", "text-white"));
-        btn.classList.add("bg-blue-600", "text-white");
+          <article class="country-card" style="background-image: url('https://images.unsplash.com/photo-1502786129293-79981df4e689?auto=format&fit=crop&w=1200&q=80');" data-aos="fade-up" data-aos-delay="100">
+            <div>
+              <div class="flex items-center gap-3 mb-3">
+                <span class="text-3xl">🇬🇧</span>
+                <h2 class="text-xl font-semibold">United Kingdom</h2>
+              </div>
+              <p>Prestigious universities, one-year master’s programs, and influential alumni networks across the globe.</p>
+            </div>
+            <div class="flex items-center justify-between text-sm country-meta mt-6">
+              <span>20+ Universities</span>
+              <span class="text-lg">→</span>
+            </div>
+          </article>
 
-        cards.forEach(card => {
-          const country = card.getAttribute("data-country");
-          card.style.display = (filter === "All" || country === filter || country === "All") ? "block" : "none";
-        });
-      });
-  });
-});
-</script>
+          <article class="country-card" style="background-image: url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80');" data-aos="fade-up" data-aos-delay="150">
+            <div>
+              <div class="flex items-center gap-3 mb-3">
+                <span class="text-3xl">🇺🇸</span>
+                <h2 class="text-xl font-semibold">United States</h2>
+              </div>
+              <p>Innovation-driven programs, world-class research, and unparalleled campus experiences.</p>
+            </div>
+            <div class="flex items-center justify-between text-sm country-meta mt-6">
+              <span>25+ Universities</span>
+              <span class="text-lg">→</span>
+            </div>
+          </article>
 
-  </div>
+          <article class="country-card" style="background-image: url('https://images.unsplash.com/photo-1445307806294-bff7f67ff225?auto=format&fit=crop&w=1200&q=80');" data-aos="fade-up" data-aos-delay="200">
+            <div>
+              <div class="flex items-center gap-3 mb-3">
+                <span class="text-3xl">🇦🇺</span>
+                <h2 class="text-xl font-semibold">Australia</h2>
+              </div>
+              <p>Globally recognised degrees, generous post-study work visas, and a famously welcoming lifestyle.</p>
+            </div>
+            <div class="flex items-center justify-between text-sm country-meta mt-6">
+              <span>18+ Universities</span>
+              <span class="text-lg">→</span>
+            </div>
+          </article>
+
+          <article class="country-card" style="background-image: url('https://images.unsplash.com/photo-1491557345352-5929e343eb89?auto=format&fit=crop&w=1200&q=80');" data-aos="fade-up" data-aos-delay="250">
+            <div>
+              <div class="flex items-center gap-3 mb-3">
+                <span class="text-3xl">🇪🇺</span>
+                <h2 class="text-xl font-semibold">Europe</h2>
+              </div>
+              <p>Affordable tuition, English-taught programs, and access to the Schengen region’s cultural treasures.</p>
+            </div>
+            <div class="flex items-center justify-between text-sm country-meta mt-6">
+              <span>30+ Universities</span>
+              <span class="text-lg">→</span>
+            </div>
+          </article>
+
+          <article class="country-card" style="background-image: url('https://images.unsplash.com/photo-1496317899792-9d7dbcd928a1?auto=format&fit=crop&w=1200&q=80');" data-aos="fade-up" data-aos-delay="300">
+            <div>
+              <div class="flex items-center gap-3 mb-3">
+                <span class="text-3xl">🇦🇪</span>
+                <span class="text-3xl">🇸🇬</span>
+                <h2 class="text-xl font-semibold">Dubai &amp; Singapore</h2>
+              </div>
+              <p>Gateway pathway programs that combine industry exposure with smooth transitions to the UK, Canada, and beyond.</p>
+            </div>
+            <div class="flex items-center justify-between text-sm country-meta mt-6">
+              <span>Gateway Pathways</span>
+              <span class="text-lg">→</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4" data-aos="fade-up" data-aos-delay="350">
+          <div>
+            <h2 class="text-2xl font-semibold text-blue-800">Need a customised shortlist for your profile?</h2>
+            <p class="text-blue-700/80 mt-2">Share your academic history and goals—we’ll build a country-wise roadmap with scholarship and visa timelines.</p>
+          </div>
+          <a href="book.html" class="btn-primary text-white px-6 py-3 rounded-full font-semibold">Book Free Consultation</a>
+        </div>
+
+        <div class="mt-20" data-aos="fade-up" data-aos-delay="400">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl md:text-4xl font-display font-semibold mb-3">Top Universities Directory</h2>
+            <p class="text-gray-600">Filter by destination to explore highlighted partners.</p>
+          </div>
+
+          <div class="flex flex-wrap justify-center gap-3 mb-10">
+            <button class="filter-btn transition-colors duration-200 px-6 py-2 border border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white" data-filter="All">All Countries</button>
+            <button class="filter-btn transition-colors duration-200 px-6 py-2 border border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white" data-filter="Canada">🇨🇦 Canada</button>
+            <button class="filter-btn transition-colors duration-200 px-6 py-2 border border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white" data-filter="UK">🇬🇧 UK</button>
+            <button class="filter-btn transition-colors duration-200 px-6 py-2 border border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white" data-filter="USA">🇺🇸 USA</button>
+            <button class="filter-btn transition-colors duration-200 px-6 py-2 border border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white" data-filter="Australia">🇦🇺 Australia</button>
+            <button class="filter-btn transition-colors duration-200 px-6 py-2 border border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white" data-filter="Dubai">🇦🇪 Dubai</button>
+            <button class="filter-btn transition-colors duration-200 px-6 py-2 border border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white" data-filter="Singapore">🇸🇬 Singapore</button>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="universityCards">
+            <div class="uni-card" data-country="Canada">
+              <h3 class="text-lg font-semibold text-slate-900">University of Toronto</h3>
+              <p class="text-slate-500 mt-1">Canada</p>
+            </div>
+            <div class="uni-card" data-country="UK">
+              <h3 class="text-lg font-semibold text-slate-900">University of Oxford</h3>
+              <p class="text-slate-500 mt-1">United Kingdom</p>
+            </div>
+            <div class="uni-card" data-country="USA">
+              <h3 class="text-lg font-semibold text-slate-900">Harvard University</h3>
+              <p class="text-slate-500 mt-1">USA</p>
+            </div>
+            <div class="uni-card" data-country="Australia">
+              <h3 class="text-lg font-semibold text-slate-900">University of Melbourne</h3>
+              <p class="text-slate-500 mt-1">Australia</p>
+            </div>
+            <div class="uni-card" data-country="Singapore">
+              <h3 class="text-lg font-semibold text-slate-900">NUS Singapore</h3>
+              <p class="text-slate-500 mt-1">Singapore</p>
+            </div>
+            <div class="uni-card" data-country="Dubai">
+              <h3 class="text-lg font-semibold text-slate-900">Heriot-Watt University Dubai</h3>
+              <p class="text-slate-500 mt-1">Dubai</p>
+            </div>
+            <div class="uni-card" data-country="Canada">
+              <h3 class="text-lg font-semibold text-slate-900">University of Waterloo</h3>
+              <p class="text-slate-500 mt-1">Canada</p>
+            </div>
+            <div class="uni-card" data-country="All">
+              <h3 class="text-lg font-semibold text-blue-700">+ View All</h3>
+              <p class="text-slate-500 mt-1">Reach out to us for the complete partner list.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   <!-- Footer -->
   <footer class="bg-gray-900 text-white py-16">
@@ -371,6 +359,25 @@
       mobileMenu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
           mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const universityCards = document.querySelectorAll('#universityCards .uni-card');
+
+    if (filterButtons.length) {
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const filter = button.getAttribute('data-filter');
+
+          filterButtons.forEach(btn => btn.classList.remove('bg-blue-600', 'text-white'));
+          button.classList.add('bg-blue-600', 'text-white');
+
+          universityCards.forEach(card => {
+            const country = card.getAttribute('data-country');
+            card.style.display = (filter === 'All' || country === filter || country === 'All') ? 'block' : 'none';
+          });
         });
       });
     }
