@@ -191,6 +191,34 @@ html {
       border-color: #3B82F6;
       box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
     }
+
+    .faq-item svg {
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item > p {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      margin-top: 0;
+      transition: max-height 0.35s ease, opacity 0.3s ease, margin-top 0.3s ease;
+    }
+
+    .faq-item.active {
+      border-color: #2563EB;
+      box-shadow: 0 8px 20px rgba(37, 99, 235, 0.12);
+      background: rgba(30, 64, 175, 0.05);
+    }
+
+    .faq-item.active > p {
+      max-height: 500px;
+      opacity: 1;
+      margin-top: 12px;
+    }
+
+    .faq-item.active svg {
+      transform: rotate(180deg);
+    }
     
     /* Process Timeline */
     .timeline-item {
