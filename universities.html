@@ -201,52 +201,78 @@
         <div class="mt-20" data-aos="fade-up" data-aos-delay="400">
           <div class="text-center mb-10">
             <h2 class="text-3xl md:text-4xl font-display font-semibold mb-3">Top Universities Directory</h2>
-            <p class="text-gray-600">Filter by destination to explore highlighted partners.</p>
+            <p class="text-gray-600">Search by city, province, or university name and discover our highlighted partners.</p>
           </div>
 
-          <div class="flex flex-wrap justify-center gap-3 mb-10">
-            <button class="filter-btn transition-colors duration-200 px-6 py-2 border border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white" data-filter="All">All Countries</button>
-            <button class="filter-btn transition-colors duration-200 px-6 py-2 border border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white" data-filter="Canada">🇨🇦 Canada</button>
-            <button class="filter-btn transition-colors duration-200 px-6 py-2 border border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white" data-filter="UK">🇬🇧 UK</button>
-            <button class="filter-btn transition-colors duration-200 px-6 py-2 border border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white" data-filter="USA">🇺🇸 USA</button>
-            <button class="filter-btn transition-colors duration-200 px-6 py-2 border border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white" data-filter="Australia">🇦🇺 Australia</button>
-            <button class="filter-btn transition-colors duration-200 px-6 py-2 border border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white" data-filter="Dubai">🇦🇪 Dubai</button>
-            <button class="filter-btn transition-colors duration-200 px-6 py-2 border border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white" data-filter="Singapore">🇸🇬 Singapore</button>
+          <div class="max-w-4xl mx-auto mb-8">
+            <div class="relative search-bar">
+              <span class="search-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="7"></circle>
+                  <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
+                </svg>
+              </span>
+              <input id="universitySearch" type="text" placeholder="Search by university, city, or province..." class="university-search-input" autocomplete="off">
+            </div>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="universityCards">
-            <div class="uni-card" data-country="Canada">
-              <h3 class="text-lg font-semibold text-slate-900">University of Toronto</h3>
-              <p class="text-slate-500 mt-1">Canada</p>
+          <div class="flex flex-wrap justify-center gap-3 mb-6">
+            <button class="filter-btn bg-blue-600 text-white" data-filter="All">All Countries</button>
+            <button class="filter-btn" data-filter="Canada">🇨🇦 Canada</button>
+            <button class="filter-btn" data-filter="UK">🇬🇧 UK</button>
+            <button class="filter-btn" data-filter="USA">🇺🇸 USA</button>
+            <button class="filter-btn" data-filter="Australia">🇦🇺 Australia</button>
+            <button class="filter-btn" data-filter="Dubai">🇦🇪 Dubai</button>
+            <button class="filter-btn" data-filter="Singapore">🇸🇬 Singapore</button>
+          </div>
+
+          <div id="regionFilters" class="flex flex-wrap justify-center gap-2 mb-10 hidden">
+          <div class="university-scroll" id="universityCards" >
+            <div class="uni-card" data-country="Canada" data-region="Ontario" data-city="Windsor" data-keywords="University of Windsor Windsor Ontario Canada" style="--accent:#60A5FA; --accent-light:rgba(96,165,250,0.18);">
+              <h3 class="uni-card__title">University of Windsor</h3>
             </div>
-            <div class="uni-card" data-country="UK">
-              <h3 class="text-lg font-semibold text-slate-900">University of Oxford</h3>
-              <p class="text-slate-500 mt-1">United Kingdom</p>
+
+            <div class="uni-card" data-country="Canada" data-region="Ontario" data-city="Thunder Bay" data-keywords="Lakehead University Thunder Bay Ontario Canada" style="--accent:#818CF8; --accent-light:rgba(129,140,248,0.18);">
+              <h3 class="uni-card__title">Lakehead University</h3>
             </div>
-            <div class="uni-card" data-country="USA">
-              <h3 class="text-lg font-semibold text-slate-900">Harvard University</h3>
-              <p class="text-slate-500 mt-1">USA</p>
+
+            <div class="uni-card" data-country="Canada" data-region="Ontario" data-city="Kitchener" data-keywords="Conestoga College Kitchener Ontario Canada" style="--accent:#2563EB; --accent-light:rgba(37,99,235,0.18);">
+              <h3 class="uni-card__title">Conestoga College</h3>
             </div>
-            <div class="uni-card" data-country="Australia">
-              <h3 class="text-lg font-semibold text-slate-900">University of Melbourne</h3>
-              <p class="text-slate-500 mt-1">Australia</p>
+
+            <div class="uni-card" data-country="Canada" data-region="Ontario" data-city="Toronto" data-keywords="Humber Polytechnic Toronto Ontario Canada" style="--accent:#1D4ED8; --accent-light:rgba(29,78,216,0.2);">
+              <h3 class="uni-card__title">Humber Polytechnic</h3>
             </div>
-            <div class="uni-card" data-country="Singapore">
-              <h3 class="text-lg font-semibold text-slate-900">NUS Singapore</h3>
-              <p class="text-slate-500 mt-1">Singapore</p>
+
+            <div class="uni-card" data-country="Canada" data-region="Ontario" data-city="Toronto" data-keywords="Seneca Polytechnic Toronto Ontario Canada" style="--accent:#7C3AED; --accent-light:rgba(124,58,237,0.18);">
+              <h3 class="uni-card__title">Seneca Polytechnic</h3>
             </div>
-            <div class="uni-card" data-country="Dubai">
-              <h3 class="text-lg font-semibold text-slate-900">Heriot-Watt University Dubai</h3>
-              <p class="text-slate-500 mt-1">Dubai</p>
+
+            <div class="uni-card" data-country="Canada" data-region="Ontario" data-city="London" data-keywords="Fanshawe College London Ontario Canada" style="--accent:#F97316; --accent-light:rgba(249,115,22,0.18);">
+              <h3 class="uni-card__title">Fanshawe College</h3>
             </div>
-            <div class="uni-card" data-country="Canada">
-              <h3 class="text-lg font-semibold text-slate-900">University of Waterloo</h3>
-              <p class="text-slate-500 mt-1">Canada</p>
+
+            <div class="uni-card" data-country="Canada" data-region="Ontario" data-city="Oshawa" data-keywords="Durham College Oshawa Ontario Canada" style="--accent:#0EA5E9; --accent-light:rgba(14,165,233,0.2);">
+              <h3 class="uni-card__title">Durham College</h3>
             </div>
-            <div class="uni-card" data-country="All">
-              <h3 class="text-lg font-semibold text-blue-700">+ View All</h3>
-              <p class="text-slate-500 mt-1">Reach out to us for the complete partner list.</p>
+
+            <div class="uni-card" data-country="Canada" data-region="Ontario" data-city="Oakville" data-keywords="Sheridan College Oakville Ontario Canada" style="--accent:#14B8A6; --accent-light:rgba(20,184,166,0.18);">
+              <h3 class="uni-card__title">Sheridan College</h3>
             </div>
+
+            <div class="uni-card" data-country="Canada" data-region="Ontario" data-city="Toronto" data-keywords="George Brown College Toronto Ontario Canada" style="--accent:#38BDF8; --accent-light:rgba(56,189,248,0.2);">
+              <h3 class="uni-card__title">George Brown College</h3>
+            </div>
+
+            <div class="uni-card uni-card--view-all" data-country="All" data-keywords="view all partners full list contact counselor" style="--accent:#1D4ED8; --accent-light:rgba(29,78,216,0.2);">
+              <h3 class="uni-card__title text-blue-100">+ View All Partners</h3>
+              <p class="uni-card__subtitle text-blue-200">Reach out to us for the complete partner list and upcoming intakes.</p>
+              <a href="contact.html" class="uni-card__link">Talk to a counselor →</a>
+            </div>
+          </div>
+
+          <div id="noResults" class="hidden text-center mt-10 text-slate-500">
+            <p>No universities match your filters yet. Try a different search or reset your filters.</p>
           </div>
         </div>
       </div>
@@ -358,24 +384,70 @@
       });
     }
 
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const universityCards = document.querySelectorAll('#universityCards .uni-card');
+    const filterButtons = Array.from(document.querySelectorAll('.filter-btn'));
+    const universityCards = Array.from(document.querySelectorAll('#universityCards .uni-card'));
+    const searchInput = document.getElementById('universitySearch');
+    const noResults = document.getElementById('noResults');
 
-    if (filterButtons.length) {
-      filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-          const filter = button.getAttribute('data-filter');
+    const filterState = {
+      country: 'All',
+      query: ''
+    };
 
-          filterButtons.forEach(btn => btn.classList.remove('bg-blue-600', 'text-white'));
-          button.classList.add('bg-blue-600', 'text-white');
+    const setActiveButton = (buttons, activeButton) => {
+      buttons.forEach(btn => btn.classList.remove('bg-blue-600', 'text-white'));
+      if (activeButton) {
+        activeButton.classList.add('bg-blue-600', 'text-white');
+      }
+    };
 
-          universityCards.forEach(card => {
-            const country = card.getAttribute('data-country');
-            card.style.display = (filter === 'All' || country === filter || country === 'All') ? 'block' : 'none';
-          });
-        });
+    const applyFilters = () => {
+      let visibleCount = 0;
+      const query = filterState.query;
+
+      universityCards.forEach(card => {
+        const country = card.dataset.country || 'All';
+        const keywords = (card.dataset.keywords || card.textContent || '').toLowerCase();
+        let showCard = true;
+
+        if (filterState.country !== 'All' && country !== filterState.country && country !== 'All') {
+          showCard = false;
+        }
+
+        if (query && !keywords.includes(query)) {
+          showCard = false;
+        }
+
+        card.classList.toggle('hidden', !showCard);
+        if (showCard) {
+          visibleCount += 1;
+        }
+      });
+
+      if (noResults) {
+        noResults.classList.toggle('hidden', visibleCount !== 0);
+      }
+    };
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const selectedCountry = button.dataset.filter || 'All';
+        filterState.country = selectedCountry;
+
+        setActiveButton(filterButtons, button);
+
+        applyFilters();
+      });
+    });
+
+    if (searchInput) {
+      searchInput.addEventListener('input', () => {
+        filterState.query = searchInput.value.trim().toLowerCase();
+        applyFilters();
       });
     }
+
+    applyFilters();
   });
 </script>
 </body></html>
